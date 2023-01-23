@@ -1,0 +1,67 @@
+.grid_container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+    flex-wrap: wrap;
+    height: 100vh;
+    /* --grid-layout-gap: 8px;
+    --grid-column-count: 3;
+    --grid-item--min-width: 1px; */
+
+    /* Calculated Values */
+    /* --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count)); */
+
+    /* grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-gap: var(--grid-layout-gap); */
+}
+
+.grid_item {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    /* grid-column-start: span 2; */
+}
+
+.cols_3 {
+    flex-basis: 25%;
+}
+
+.cols_6 {
+    flex-basis: 50%;
+}
+
+.cols_9 {
+    flex-basis: 75%;
+}
+
+.cols_12 {
+    flex-basis: 100%;
+}
+
+.spacing_sm {
+    margin: -8px;
+}
+
+.spacing_sm > .grid_item {
+    padding: 8px;
+}
+
+.spacing_md {
+    margin: -16px;
+}
+
+.spacing_md > .grid_item {
+    padding: 16px;
+}
+
+.spacing_lg {
+    margin: -24px;
+}
+
+.spacing_lg > .grid_item {
+    padding: 24px;
+}
