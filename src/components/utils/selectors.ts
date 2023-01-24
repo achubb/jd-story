@@ -1,5 +1,5 @@
 import { ThemeProps } from "../styles/theme";
-import { getColor } from "./getters";
+import { getColor, getFontSize } from "./getters";
 
 import { OmitThemeProp } from "./types";
 
@@ -35,3 +35,4 @@ function createSelector<T extends (...args: any) => any>(getter: T) {
 
 // Actual Selectors
 export const color = createSelector(getColor);
+export const fontSize = createSelector(getFontSize);

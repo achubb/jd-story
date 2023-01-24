@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import * as Styled from './Text.styles';
+import { FontSize } from '../../styles/theme';
 
 export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
     /**
@@ -11,21 +12,20 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
      * Set the font size of the text
      * @default md
      */
-    fontSize?: "xs" | "sm" | "md" | "lg" | "xl"
+    fontSize: FontSize
 }
 
 /**
  * Text
  * @function Text
  * @param {string} align - CSS 'text-align' property
- * @param {string} fontSize - set the font size of the text
  * @param {children} ReactNode - set any paragaph children
  * @returns {JSX.Element} - rendered Text
  */
 
 const Text: FC<TextProps> = ({
     align = 'left',
-    fontSize = 'xl',
+    fontSize = 'sm',
     children,
     ...rest
 }) => {

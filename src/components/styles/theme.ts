@@ -25,6 +25,14 @@ const theme = {
             "hsl(186, 91%, 29%)",
             "hsl(188, 91%, 23%)",
         ],
+    },
+    fontSize: {
+        xs: "0.75rem",
+        sm: "0.875rem",
+        md: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        xxl: "1.5rem"
     }
 };
 
@@ -40,5 +48,7 @@ export type ColorType = keyof Theme["colors"];
 // the 9 possible shades of a color
 export type ColorIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
+// Export the font sizes
+export type FontSize = keyof Theme["fontSize"];
 
 export default theme;
