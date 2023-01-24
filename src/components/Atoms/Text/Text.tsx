@@ -25,7 +25,7 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
 
 const Text: FC<TextProps> = ({
     align = 'left',
-    fontSize = 'md',
+    fontSize = 'xl',
     children,
     ...rest
 }) => {
