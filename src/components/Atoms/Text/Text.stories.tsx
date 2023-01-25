@@ -11,3 +11,4 @@ const Template: Story<TextProps> = (args) => <Text {...args}>Adipiscing amet eu 
 
 export const Normal = Template.bind({});
 Normal.args = {};
+// Normal.args = {};

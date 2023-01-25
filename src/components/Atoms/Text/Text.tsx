@@ -2,7 +2,14 @@ import React, { FC } from 'react'
 import * as Styled from './Text.styles';
 import { FontSize, TextAlign, TextColor } from '../../styles/theme';
 
+type ElementType = "p" | "span"
+
 export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
+    /**
+     * Set the Element type for the text to be rendered as
+     * @default p
+     */
+    as?: ElementType
     /**
      * Set the CSS 'text-align' property
      * @default left
@@ -29,6 +36,7 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
  */
 
 const Text: FC<TextProps> = ({
+    as = 'p',
     align = 'left',
     fontSize = 'md',
     textColor = 'primary',
@@ -36,14 +44,15 @@ const Text: FC<TextProps> = ({
     ...rest
 }) => {
     return (
-        <Styled.P 
+        <Styled.Text
+            as={as}
             align={align}
             fontSize={fontSize}
             textColor={textColor}
             {...rest}
         >
             { children }
-        </Styled.P>
+        </Styled.Text>
     )
 }
 
