@@ -2,7 +2,9 @@ import defaultTheme, {
     ThemeProps, 
     ColorType, 
     ColorIndex,
-    FontSize 
+    FontSize, 
+    TextAlign,
+    TextColor
 } from '../styles/theme';
 
 // Falls back to default theme when required
@@ -23,4 +25,18 @@ export function getFontSize(
     props: ThemeProps
 ) {
     return getTheme(props).fontSize[fontSize];
+}
+
+export function getTextAlign(
+    textAlign: TextAlign,
+    props: ThemeProps
+) {
+    return getTheme(props).textAlign[textAlign];
+}
+
+export function getTextColor(
+    textColor: TextColor,
+    props : ThemeProps
+) {
+    return getTheme(props).textColor[textColor];
 }

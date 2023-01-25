@@ -1,12 +1,23 @@
 import React, { FC } from 'react';
 import * as Styled from './Heading.styles';
+import { FontSize, TextAlign, TextColor } from '../../styles/theme';
 
 export interface HeaderProps extends React.ComponentPropsWithoutRef<'p'> {
     /**
      * Set the CSS 'text-align' property
      * @default left
      */
-    align?: "left" | "right" | "center"
+    align: TextAlign
+    /**
+     * Set the font size of the text
+     * @default xl
+     */
+    fontSize: FontSize
+    /** 
+     * Set the colour of the heading
+     * @default brandPrimary
+     */
+    textColor: TextColor
 }
 
 /**
@@ -19,12 +30,16 @@ export interface HeaderProps extends React.ComponentPropsWithoutRef<'p'> {
 
 const Heading: FC<HeaderProps> = ({
     align = 'left',
+    fontSize = 'xl',
+    textColor = 'primary',
     children,
     ...rest
 }) => {
     return (
         <Styled.H3
             align={align}
+            fontSize={fontSize}
+            textColor={textColor}
             {...rest}
         >
             { children }

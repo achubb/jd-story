@@ -1,18 +1,23 @@
 import React, { FC } from 'react'
 import * as Styled from './Text.styles';
-import { FontSize } from '../../styles/theme';
+import { FontSize, TextAlign, TextColor } from '../../styles/theme';
 
 export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
     /**
      * Set the CSS 'text-align' property
      * @default left
      */
-    align?: "left" | "right" | "center"
+    align: TextAlign
     /**
      * Set the font size of the text
      * @default md
      */
     fontSize: FontSize
+    /**
+     * Set the colour of the text
+     * @default: brandPrimary
+     */
+    textColor: TextColor
 }
 
 /**
@@ -25,7 +30,8 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
 
 const Text: FC<TextProps> = ({
     align = 'left',
-    fontSize = 'sm',
+    fontSize = 'md',
+    textColor = 'primary',
     children,
     ...rest
 }) => {
@@ -33,6 +39,7 @@ const Text: FC<TextProps> = ({
         <Styled.P 
             align={align}
             fontSize={fontSize}
+            textColor={textColor}
             {...rest}
         >
             { children }

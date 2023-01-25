@@ -1,5 +1,5 @@
 import { ThemeProps } from "../styles/theme";
-import { getColor, getFontSize } from "./getters";
+import { getColor, getFontSize, getTextColor, getTextAlign } from "./getters";
 
 import { OmitThemeProp } from "./types";
 
@@ -36,3 +36,5 @@ function createSelector<T extends (...args: any) => any>(getter: T) {
 // Actual Selectors
 export const color = createSelector(getColor);
 export const fontSize = createSelector(getFontSize);
+export const textAlign = createSelector(getTextAlign);
+export const textColor = createSelector(getTextColor);

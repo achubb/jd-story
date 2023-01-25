@@ -1,3 +1,8 @@
+const palette = {
+    brandPrimary: "#000000",
+    brandSecondary: "#43d5b0"
+}
+
 // Tokens
 const theme = {
     colors: {
@@ -32,7 +37,15 @@ const theme = {
         md: "1rem",
         lg: "1.125rem",
         xl: "1.25rem",
-        xxl: "1.5rem"
+    },
+    textAlign: {
+        left: "left",
+        center: "center",
+        right: "right"
+    },
+    textColor: {
+        primary: palette.brandPrimary,
+        secondary: palette.brandSecondary
     }
 };
 
@@ -50,5 +63,11 @@ export type ColorIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
 // Export the font sizes
 export type FontSize = keyof Theme["fontSize"];
+
+// Export the text alignments
+export type TextAlign = keyof Theme["textAlign"];
+
+// Export the palette
+export type TextColor = keyof Theme["textColor"];
 
 export default theme;
