@@ -21,21 +21,21 @@ export function getColor(
 }
 
 export function getFontSize(
-    fontSize: FontSize,
+    fontSize: FontSize = 'md',
     props: ThemeProps
 ) {
     return getTheme(props).fontSize[fontSize];
 }
 
 export function getTextAlign(
-    textAlign: TextAlign,
+    textAlign: TextAlign = 'left',
     props: ThemeProps
 ) {
     return getTheme(props).textAlign[textAlign];
 }
 
 export function getTextColor(
-    textColor: TextColor,
+    textColor: TextColor = 'primary',
     props : ThemeProps
 ) {
     return getTheme(props).textColor[textColor];

@@ -14,17 +14,17 @@ export interface HeaderProps extends React.ComponentPropsWithoutRef<'p'> {
      * Set the CSS 'text-align' property
      * @default left
      */
-    align: TextAlign
+    align?: TextAlign
     /**
      * Set the font size of the text
      * @default xl
      */
-    fontSize: FontSize
+    fontSize?: FontSize
     /** 
      * Set the colour of the heading
      * @default brandPrimary
      */
-    textColor: TextColor
+    textColor?: TextColor
 }
 
 /**

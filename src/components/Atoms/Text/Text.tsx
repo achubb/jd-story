@@ -14,17 +14,17 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
      * Set the CSS 'text-align' property
      * @default left
      */
-    align: TextAlign
+    align?: TextAlign
     /**
      * Set the font size of the text
      * @default md
      */
-    fontSize: FontSize
+    fontSize?: FontSize
     /**
      * Set the colour of the text
      * @default: brandPrimary
      */
-    textColor: TextColor
+    textColor?: TextColor
 }
 
 /**
@@ -37,9 +37,9 @@ export interface TextProps extends React.ComponentPropsWithoutRef<'p'> {
 
 const Text: FC<TextProps> = ({
     as = 'p',
-    align = 'left',
-    fontSize = 'md',
-    textColor = 'primary',
+    align,
+    fontSize,
+    textColor,
     children,
     ...rest
 }) => {

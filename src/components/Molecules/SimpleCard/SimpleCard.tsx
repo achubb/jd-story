@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { StyledSimpleCard } from "./SimpleCard.styles";
 import Heading from "../../Atoms/Heading/Heading";
 import Text from "../../Atoms/Text";
+import NextImage from "../../Atoms/Image/NextImage";
 
 /**
  * Simple Card
@@ -13,7 +14,8 @@ import Text from "../../Atoms/Text";
 const SimpleCard: FC = () => {
     return (
         <StyledSimpleCard>
-            <Heading>Card Heading</Heading>
+            <NextImage fill></NextImage>
+            <Heading as='h3'>Card Heading</Heading>
             <Text>Here is some card text...</Text>
         </StyledSimpleCard>
     )
