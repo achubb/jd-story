@@ -68,6 +68,7 @@ export type FontSize = keyof Theme["fontSize"];
 export type TextAlign = keyof Theme["textAlign"];
 
 // Export the palette
-export type TextColor = keyof Theme["textColor"];
+// export type TextColor = keyof Theme["textColor"];
+export type TextColor = "primary" | "seecondary";
 
 export default theme;

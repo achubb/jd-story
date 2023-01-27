@@ -1,32 +1,14 @@
 {
 	"compilerOptions": {
+		"jsx": "react", // Convert JSX Syntax into React CreateElement...
+		"module": "ESNext", // Use modern ES6 type modules
+		"declaration": true, // Create type declarations for use in js|ts projects
+		"declarationDir": "types",
+		"sourceMap": true, // Include sourcemaps for debug
 		"target": "es5",
-		"outDir": "lib",
-		"lib": [
-			"dom",
-			"dom.iterable",
-			"esnext"
-		],
-		"declaration": true,
-		"declarationDir": "lib",
-		"allowJs": true,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"module": "esnext",
+		"outDir": "dist", // Target for the bundled library
 		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react"
-	},
-	"include": [
-		"src"
-	],
-	"exclude": [
-		"node_modules",
-		"lib"
-	]
+		"allowSyntheticDefaultImports": true,
+		"emitDeclarationOnly": true,
+	}
 }	

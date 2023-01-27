@@ -1,6 +1,4 @@
 import React, { ReactNode } from "react";
-import GridRuler from "../GridRuler/GridRuler";
-import SimpleGridPanel from "../SimpleGridPanel/SimpleGridPanel";
 import "./simplegrid.css";
 
 type Cols = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;

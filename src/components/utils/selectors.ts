@@ -1,10 +1,7 @@
 import { ThemeProps } from "../styles/theme";
 import { getColor, getFontSize, getTextColor, getTextAlign } from "./getters";
 
-import { OmitThemeProp } from "./types";
-
-// This is to express the return type if we want a curried version
-type Resolver<T> = (props: ThemeProps) => T;
+import { OmitThemeProp, Resolver } from "./types";
 
 function createSelector<T extends (...args: any) => any>(getter: T) {
 

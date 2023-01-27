@@ -20,8 +20,8 @@ export function getColor(
     return getTheme(props).colors[type][index]; 
 }
 
-export function getFontSize(
-    fontSize: FontSize = 'md',
+export function getFontSize( 
+    fontSize: FontSize = 'md', 
     props: ThemeProps
 ) {
     return getTheme(props).fontSize[fontSize];

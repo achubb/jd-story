@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { StyledSimpleCard } from "./SimpleCard.styles";
-import Heading from "../../Atoms/Heading/Heading";
-import Text from "../../Atoms/Text";
-import NextImage from "../../Atoms/Image/NextImage";
+import Heading from "../../atoms/heading/Heading";
+import Text from "../../atoms/text/Text";
+import NextImage from "../../atoms/image/NextImage";
 
 /**
  * Simple Card

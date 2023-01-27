@@ -2,7 +2,7 @@ import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
 import SimpleGrid, { SimpleGridProps } from "./SimpleGrid";
-import SimpleGridPanel from "../SimpleGridPanel/SimpleGridPanel"
+import SimpleGridPanel from "../simple-grid-panel/SimpleGridPanel";
 
 export default {
     title: "Utilities/SimpleGrid",

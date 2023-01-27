@@ -1,0 +1,1 @@
+export { default as GenericButton } from "./atoms/generic-button/GenericButton"
