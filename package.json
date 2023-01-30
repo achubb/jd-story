@@ -1,5 +1,5 @@
 {
-  "name": "jd-story",
+  "name": "@achubb/jd-story",
   "version": "1.0.0",
   "description": "Workbench for JD Storybook Components",
   "scripts": {
@@ -57,5 +57,8 @@
   "bugs": {
     "url": "https://github.com/n/a/issues"
   },
-  "homepage": "https://github.com/n/a#readme"
+  "homepage": "https://github.com/n/a#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/achubb"
+  }
 }
