@@ -59,6 +59,6 @@
   },
   "homepage": "https://github.com/n/a#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/achubb"
   }
 }
